@@ -82,17 +82,49 @@ document.head.appendChild(styleSheet);
 
 /* ===== CONTACT FORM ===== */
 const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const btn = contactForm.querySelector('button[type="submit"]');
-  const original = btn.innerHTML;
-  btn.innerHTML = '<i class="fas fa-check"></i> Message sent!';
-  btn.style.background = '#10b981';
-  btn.disabled = true;
-  setTimeout(() => {
-    btn.innerHTML = original;
-    btn.style.background = '';
-    btn.disabled = false;
-    contactForm.reset();
-  }, 3000);
+contactForm.addEventListener('submit', async (e) => {
+  // If the form has a real FormSpree action, let it submit natively via fetch
+  const action = contactForm.action;
+  const isFormspree = action && action.includes('formspree.io') && !action.includes('YOUR_FORM_ID');
+
+  if (isFormspree) {
+    e.preventDefault();
+    const btn = contactForm.querySelector('button[type="submit"]');
+    const original = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending…';
+    btn.disabled = true;
+    try {
+      const data = new FormData(contactForm);
+      const res = await fetch(action, { method: 'POST', body: data, headers: { Accept: 'application/json' } });
+      if (res.ok) {
+        btn.innerHTML = '<i class="fas fa-check"></i> Message sent!';
+        btn.style.background = '#10b981';
+        contactForm.reset();
+      } else {
+        throw new Error('server error');
+      }
+    } catch {
+      btn.innerHTML = '<i class="fas fa-exclamation-circle"></i> Error — please try again';
+      btn.style.background = '#ef4444';
+    }
+    setTimeout(() => {
+      btn.innerHTML = original;
+      btn.style.background = '';
+      btn.disabled = false;
+    }, 4000);
+  } else {
+    // Demo mode (no FormSpree ID set yet)
+    e.preventDefault();
+    const btn = contactForm.querySelector('button[type="submit"]');
+    const original = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-check"></i> Message sent!';
+    btn.style.background = '#10b981';
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.innerHTML = original;
+      btn.style.background = '';
+      btn.disabled = false;
+      contactForm.reset();
+    }, 3000);
+  }
 });
