@@ -43,6 +43,26 @@ body {
   line-height: 1.6;
 }
 
+.hero > * {
+  animation: fadeUp 650ms ease both;
+}
+
+.hero > *:nth-child(2) {
+  animation-delay: 60ms;
+}
+
+.hero > *:nth-child(3) {
+  animation-delay: 120ms;
+}
+
+.hero > *:nth-child(4) {
+  animation-delay: 180ms;
+}
+
+.hero > *:nth-child(5) {
+  animation-delay: 240ms;
+}
+
 a {
   color: var(--primary);
   text-decoration: none;
@@ -184,16 +204,19 @@ h1 {
   border: 1px solid transparent;
   padding: 0.62rem 1rem;
   font-weight: 600;
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
 }
 
 .btn-primary {
   background: var(--primary);
   color: #ffffff;
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--primary) 35%, transparent);
 }
 
 .btn-primary:hover {
   background: var(--primary-strong);
   color: #ffffff;
+  transform: translateY(-2px);
 }
 
 .btn-secondary {
@@ -261,6 +284,20 @@ h2 {
   border-radius: 0.95rem;
   padding: 1.1rem;
   box-shadow: var(--shadow);
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.14);
+}
+
+#ai .card {
+  border-image: linear-gradient(120deg, var(--primary), #22d3ee) 1;
+}
+
+#ai .section-heading p {
+  max-width: 72ch;
 }
 
 .card h3 {
@@ -334,6 +371,54 @@ h2 {
   overflow: hidden;
   background: var(--surface);
   box-shadow: var(--shadow);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.image-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.14);
+}
+
+[data-theme="dark"] .card:hover,
+[data-theme="dark"] .image-card:hover {
+  box-shadow: 0 16px 32px rgba(2, 6, 23, 0.55);
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 520ms ease, transform 520ms ease;
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .image-card img {
