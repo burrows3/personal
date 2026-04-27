@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio &amp; Resume</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">SB<span class="dot">.</span></a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#ventures">Ventures</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero">
+      <div class="hero-content">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Sam Burrows</h1>
+        <h2 class="hero-title">
+          Finance Professional &amp;
+          <span class="highlight">Self-Taught Engineer</span>
+        </h2>
+        <p class="hero-tagline">
+          Bridging capital markets and code — building products at the
+          intersection of finance and technology.
+        </p>
+        <div class="hero-badges">
+          <span class="badge"><i class="fas fa-chart-line"></i> Finance</span>
+          <span class="badge"><i class="fas fa-code"></i> Software Engineering</span>
+          <span class="badge"><i class="fas fa-rocket"></i> 1× Founder</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#ventures" class="btn btn-primary">View My Work</a>
+          <a href="resume.pdf" class="btn btn-outline" download
+            ><i class="fas fa-download"></i> Download Résumé</a
+          >
+        </div>
+      </div>
+      <div class="hero-graphic">
+        <div class="avatar-ring">
+          <div class="avatar-inner">SB</div>
+        </div>
+        <div class="floating-card card-1">
+          <i class="fas fa-chart-bar"></i>
+          <span>Financial Modelling</span>
+        </div>
+        <div class="floating-card card-2">
+          <i class="fas fa-terminal"></i>
+          <span>Full-Stack Dev</span>
+        </div>
+        <div class="floating-card card-3">
+          <i class="fas fa-lightbulb"></i>
+          <span>Founder</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">About Me</span>
+          <h2>Finance roots. Engineering mindset.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I started my career in finance — analysing markets, building
+              financial models, and working with data at scale. Somewhere along
+              the way I fell in love with software engineering, taught myself to
+              code, and never looked back.
+            </p>
+            <p>
+              That hybrid background gives me a rare edge: I understand both
+              <strong>what to build</strong> (from a business and market
+              perspective) and <strong>how to build it</strong> (from a
+              technical one). I've applied this to launch my own venture and
+              deliver software solutions that solve real financial problems.
+            </p>
+            <p>
+              I'm passionate about fintech, developer tooling, automation, and
+              anything that makes complex information more accessible.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Years in Finance</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Years Self-Taught Engineering</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">1×</span>
+              <span class="stat-label">Startup Founded</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">Curiosity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">Skills</span>
+          <h2>A dual toolkit</h2>
+        </div>
+        <div class="skills-columns">
+          <!-- Finance Skills -->
+          <div class="skills-column">
+            <div class="skills-column-header">
+              <i class="fas fa-chart-pie"></i>
+              <h3>Finance</h3>
+            </div>
+            <ul class="skill-list">
+              <li>
+                <span class="skill-name">Financial Modelling</span>
+                <div class="skill-bar"><div class="skill-fill" data-fill="95"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">Valuation &amp; DCF Analysis</span>
+                <div class="skill-bar"><div class="skill-fill" data-fill="90"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">Capital Markets</span>
+                <div class="skill-bar"><div class="skill-fill" data-fill="85"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">Data Analysis &amp; Reporting</span>
+                <div class="skill-bar"><div class="skill-fill" data-fill="92"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">Risk Management</span>
+                <div class="skill-bar"><div class="skill-fill" data-fill="80"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">Excel / VBA</span>
+                <div class="skill-bar"><div class="skill-fill" data-fill="95"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Engineering Skills -->
+          <div class="skills-column">
+            <div class="skills-column-header">
+              <i class="fas fa-laptop-code"></i>
+              <h3>Engineering</h3>
+            </div>
+            <ul class="skill-list">
+              <li>
+                <span class="skill-name">JavaScript / TypeScript</span>
+                <div class="skill-bar"><div class="skill-fill" data-fill="88"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">React / Next.js</span>
+                <div class="skill-bar"><div class="skill-fill" data-fill="85"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">Python</span>
+                <div class="skill-bar"><div class="skill-fill" data-fill="82"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">Node.js / REST APIs</span>
+                <div class="skill-bar"><div class="skill-fill" data-fill="80"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">SQL &amp; Databases</span>
+                <div class="skill-bar"><div class="skill-fill" data-fill="78"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">Git / CI/CD</span>
+                <div class="skill-bar"><div class="skill-fill" data-fill="75"></div></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tech tags -->
+        <div class="tech-tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Python</span>
+          <span class="tag">React</span>
+          <span class="tag">Next.js</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">Excel</span>
+          <span class="tag">VBA</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Git</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Tailwind CSS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">Experience</span>
+          <h2>Career timeline</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Founder &amp; CEO</h3>
+                  <p class="company">Stealth Fintech Startup</p>
+                </div>
+                <span class="timeline-date">2022 – Present</span>
+              </div>
+              <p>
+                Founded and built a fintech product from zero to paying customers.
+                Responsible for product design, full-stack development, fundraising
+                strategy, and go-to-market execution.
+              </p>
+              <div class="timeline-tags">
+                <span>Entrepreneurship</span>
+                <span>Product</span>
+                <span>Full-Stack</span>
+                <span>Fundraising</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Software Engineer</h3>
+                  <p class="company">Self-Employed / Freelance</p>
+                </div>
+                <span class="timeline-date">2021 – Present</span>
+              </div>
+              <p>
+                Designed and shipped web applications for clients in financial
+                services. Built internal tools, data dashboards, and automated
+                reporting pipelines leveraging finance domain expertise.
+              </p>
+              <div class="timeline-tags">
+                <span>React</span>
+                <span>Python</span>
+                <span>API Design</span>
+                <span>Automation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Finance Analyst</h3>
+                  <p class="company">Investment Firm</p>
+                </div>
+                <span class="timeline-date">2018 – 2022</span>
+              </div>
+              <p>
+                Conducted fundamental research, built complex financial models, and
+                supported investment decisions across equity and fixed income. Became
+                the team's go-to resource for data automation using Excel VBA and
+                Python.
+              </p>
+              <div class="timeline-tags">
+                <span>Financial Modelling</span>
+                <span>Equity Research</span>
+                <span>Excel / VBA</span>
+                <span>Python</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Junior Analyst</h3>
+                  <p class="company">Boutique Advisory</p>
+                </div>
+                <span class="timeline-date">2016 – 2018</span>
+              </div>
+              <p>
+                Supported M&amp;A transactions and capital raises. Prepared pitch
+                decks, financial analyses, and due-diligence materials for clients
+                across various sectors.
+              </p>
+              <div class="timeline-tags">
+                <span>M&amp;A</span>
+                <span>Valuation</span>
+                <span>Due Diligence</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ventures / Projects -->
+    <section id="ventures">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">Ventures &amp; Projects</span>
+          <h2>Things I've built</h2>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card featured">
+            <div class="project-badge">Founder</div>
+            <div class="project-icon"><i class="fas fa-rocket"></i></div>
+            <h3>Fintech Startup</h3>
+            <p>
+              A fintech product that simplifies personal financial management for
+              young professionals — connecting bank accounts, tracking cashflow, and
+              offering actionable insights powered by proprietary algorithms.
+            </p>
+            <div class="project-stack">
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>PostgreSQL</span>
+              <span>Plaid API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"
+                ><i class="fas fa-external-link-alt"></i> Live</a
+              >
+              <a href="#" class="project-link"
+                ><i class="fab fa-github"></i> Code</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-chart-area"></i></div>
+            <h3>Market Dashboard</h3>
+            <p>
+              Real-time equity dashboard pulling live market data, computing
+              technical indicators, and visualising portfolio P&amp;L — all in the
+              browser.
+            </p>
+            <div class="project-stack">
+              <span>React</span>
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>Recharts</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"
+                ><i class="fab fa-github"></i> Code</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+            <h3>DCF Modelling Tool</h3>
+            <p>
+              A web-based discounted cash-flow modelling tool that allows analysts
+              to build, stress-test, and share valuation models without leaving the
+              browser.
+            </p>
+            <div class="project-stack">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"
+                ><i class="fab fa-github"></i> Code</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-robot"></i></div>
+            <h3>Reporting Automation</h3>
+            <p>
+              Python scripts that automated monthly financial reporting, cutting
+              report-generation time from two days to under two hours for a
+              mid-sized investment firm.
+            </p>
+            <div class="project-stack">
+              <span>Python</span>
+              <span>pandas</span>
+              <span>openpyxl</span>
+              <span>SMTP</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"
+                ><i class="fab fa-github"></i> Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">Education</span>
+          <h2>Formal &amp; self-directed learning</h2>
+        </div>
+        <div class="edu-grid">
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-university"></i></div>
+            <div class="edu-body">
+              <h3>Bachelor of Commerce — Finance</h3>
+              <p class="edu-institution">University</p>
+              <span class="edu-date">2012 – 2016</span>
+              <p class="edu-desc">
+                Major in Finance with coursework in investment theory, corporate
+                finance, econometrics, and financial accounting.
+              </p>
+            </div>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-laptop"></i></div>
+            <div class="edu-body">
+              <h3>Self-Taught Software Engineering</h3>
+              <p class="edu-institution">Online Courses, Docs &amp; Building</p>
+              <span class="edu-date">2019 – Present</span>
+              <p class="edu-desc">
+                FreeCodecamp, The Odin Project, CS50, official docs, open-source
+                contributions, and shipping real products — the best classroom.
+              </p>
+            </div>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+            <div class="edu-body">
+              <h3>CFA Level I</h3>
+              <p class="edu-institution">CFA Institute</p>
+              <span class="edu-date">2018</span>
+              <p class="edu-desc">
+                Passed CFA Level I covering ethical standards, quantitative methods,
+                economics, financial reporting, and portfolio management.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">Contact</span>
+          <h2>Let's connect</h2>
+          <p class="section-sub">
+            Open to interesting conversations, collaborations, and opportunities.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <a href="mailto:hello@example.com" class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>hello@example.com</span>
+            </a>
+            <a href="https://github.com/burrows3" target="_blank" rel="noopener" class="contact-item">
+              <i class="fab fa-github"></i>
+              <span>github.com/burrows3</span>
+            </a>
+            <a href="https://linkedin.com/in/" target="_blank" rel="noopener" class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener" class="contact-item">
+              <i class="fab fa-x-twitter"></i>
+              <span>Twitter / X</span>
+            </a>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <p>© 2024 Sam Burrows · Built with HTML, CSS &amp; JavaScript</p>
+        <div class="footer-links">
+          <a href="https://github.com/burrows3" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
