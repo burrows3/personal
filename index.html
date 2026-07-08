@@ -86,9 +86,8 @@
           friction, data signals, and business goals into practical product decisions for leadership,
           operators, and users. I have a strong interest in software, and outside work I spend my
           time learning AI and large language models by building real projects, because I like
-          turning ideas into usable systems. ChatVET is a live AI product with users, shaped by my
-          interest in animal health and close domain exposure through my wife, who is a
-          veterinarian.
+          turning ideas into usable systems. ChatVET is a live AI clinical assistant for veterinary
+          professionals, shaped by close domain exposure through my wife, who is a veterinarian.
         </p>
       </section>
 
@@ -241,7 +240,7 @@
             <ul>
               <li>Build in my free time to learn LLMs hands-on: prompting, retrieval, evaluation, AI UX, and technical tradeoffs.</li>
               <li>Use side projects as a proving ground for ideas, workflows, and product thinking.</li>
-              <li>Launched ChatVET with users to explore responsible AI support for pet-owner questions and vet-ready context.</li>
+              <li>Launched ChatVET with users: a RAG-based clinical assistant that helps veterinary professionals get sourced answers fast.</li>
             </ul>
           </article>
         </div>
@@ -257,14 +256,16 @@
             <h3>ChatVET</h3>
             <p class="project-role">Founder / AI Product Builder - Live with users</p>
             <p>
-              Built ChatVET as an AI-assisted pet health product for pet owners who need help
-              organizing symptoms, preparing better questions, and understanding when professional
-              veterinary care is needed. The product is live with users and is informed by close
+              Built ChatVET as an AI-powered clinical assistant for veterinary professionals. It
+              answers clinical questions with retrieval-augmented generation (RAG) grounded in a
+              curated veterinary knowledge base, so responses cite trusted sources instead of
+              relying on the model alone. The product is live with users and is informed by close
               exposure to veterinary workflows through my wife, who is a veterinarian.
             </p>
             <ul>
-              <li>Focused on responsible AI, clear escalation, and vet-ready summaries rather than replacing licensed care.</li>
-              <li>Shows product discovery, AI UX, user empathy, prototyping, and real-world launch execution outside work.</li>
+              <li>Streaming RAG chat: AWS Bedrock Knowledge Base retrieval with a Mistral Large model, served by a FastAPI backend and a React/Vite frontend with Supabase auth and data.</li>
+              <li>Lab Work Analyzer: a vision pipeline that ingests lab-result PDFs and returns structured, clinic-ready analysis for diagnostic review.</li>
+              <li>Full production surface: streaming APIs, Stripe subscription billing, and separate web and mobile stacks running end to end.</li>
             </ul>
           </article>
           <article class="card project-card">
